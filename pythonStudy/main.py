@@ -34,4 +34,3 @@ def calculate_change(payment, cost):
 calculate_change(100000, 33000)
 print()
 calculate_change(500000, 378000)
-
