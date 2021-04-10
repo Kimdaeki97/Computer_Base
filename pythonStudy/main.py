@@ -16,7 +16,6 @@
 #     return PI * r * r
 
 # 04.09 - 거스름돈 계산 프로그램
-
 def calculate_change(payment, cost):
     left = payment - cost
 
@@ -34,3 +33,19 @@ def calculate_change(payment, cost):
 calculate_change(100000, 33000)
 print()
 calculate_change(500000, 378000)
+
+# 04.10
+# while문을 사용하여, 100 이상의 자연수 중 가장 작은 23의 배수를 출력하기
+i = 100
+
+while i % 23 != 0:
+    i += 1
+
+print(i)
+
+# while 반복문을 사용하여 1이상 100이하 짝수를 모두 출력하기
+# i = 1
+# while i <= 50:
+#     print(i * 2)
+#     i += 1
+
