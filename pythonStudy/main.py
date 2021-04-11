@@ -49,6 +49,7 @@ print(i)
 #     print(i * 2)
 #     i += 1
 
+print("-------------------------------")
 # 04.11
 temperature = 11
 if temperature <= 10:
@@ -56,6 +57,7 @@ if temperature <= 10:
 else:
     print("자켓을 입지 않는다.")
 
+print("-------------------------------")
 # 학점 계산기
 def print_grade(midterm_score, final_score):
     total = midterm_score + final_score
@@ -76,6 +78,7 @@ print_grade(20, 35)
 print_grade(30, 32)
 print_grade(50, 45)
 
+print("-------------------------------")
 # 100이하 자연수 중 8의 배수이지만, 12의 배수는 아닌 것은
 i = 1
 while i <= 100:
@@ -83,6 +86,7 @@ while i <= 100:
         print(i)
     i += 1
 
+print("-------------------------------")
 # 1,000보다 작은 자연수 중 2 또는 3의 배수의 합은?
 i = 1
 total = 0
@@ -93,6 +97,23 @@ while i < 1000:
     i += 1
 
 print(total)
+
+print("-------------------------------")
+# 정수 120의 약수를 모두 출력하고, 총 몇개의 약수가 있는지 출력하는 프로그램
+i = 1
+count = 0
+
+while i <= 120:
+    if 120 % i == 0:
+        print(i)
+        count += 1
+    i += 1
+
+print("120의 약수는 총 {}개 입니다.".format(count))
+
+print("-------------------------------")
+
+
 
 
 
