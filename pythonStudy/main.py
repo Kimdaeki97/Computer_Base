@@ -113,7 +113,19 @@ print("120의 약수는 총 {}개 입니다.".format(count))
 
 print("-------------------------------")
 
-# 04.12
+# 04.13
+# 리스트
+numbers = [2, 3, 5, 7, 11, 13]
+names = ["윤수", "혜린", "태호", "영훈"]
+
+# 인덱싱 (indexing)
+num_1 = numbers[1]
+num_3 = numbers[3]
+
+# 리스트 슬라이싱 (list slicing)
+print(numbers[0:4])
+
+
 
 
 
