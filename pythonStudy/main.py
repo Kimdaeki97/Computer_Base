@@ -114,18 +114,39 @@ print("120의 약수는 총 {}개 입니다.".format(count))
 print("-------------------------------")
 
 # 04.13
-# 리스트
-numbers = [2, 3, 5, 7, 11, 13]
-names = ["윤수", "혜린", "태호", "영훈"]
+# # 리스트
+# numbers = [2, 3, 5, 7, 11, 13]
+# names = ["윤수", "혜린", "태호", "영훈"]
+#
+# # 인덱싱 (indexing)
+# num_1 = numbers[1]
+# num_3 = numbers[3]
+#
+# # 리스트 슬라이싱 (list slicing)
+# print(numbers[0:4])
 
-# 인덱싱 (indexing)
-num_1 = numbers[1]
-num_3 = numbers[3]
+print("-------------------------------")
+numbers = []
+numbers.append(5)
+numbers.append(8)
+print(numbers)
 
-# 리스트 슬라이싱 (list slicing)
-print(numbers[0:4])
+print("-------------------------------")
+numbers = [2, 3, 5, 7, 11, 13, 17, 19]
+del numbers[3]
 
+numbers.insert(4, 37)
+print(numbers)
 
+print("-------------------------------")
+numbers = [19, 13, 2, 5, 3, 11, 7, 17]
+
+sorted(numbers, reverse=True) # -> 기존 리스트는 건드리지 않고, 정렬된 새로운 리스트를 리턴
+print(numbers)
+
+print("-------------------------------")
+numbers.sort(reverse=True) #-> 아무것도 리턴하지 않고, 기존 리스트를 정렬
+print(numbers)
 
 
 
