@@ -47,6 +47,9 @@ while dan <= 9:
         hang += 1
     dan += 1
 
+# 04.14
+
+
 
 
 
