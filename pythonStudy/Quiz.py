@@ -47,7 +47,30 @@ while dan <= 9:
         hang += 1
     dan += 1
 
+print("-------------------------------")
 # 04.14
+# 리스트 원소를 모두 출력하기
+greetings = ["안녕", "니하오", "곤니찌와", "올라", "싸와디캅", "헬로", "봉주르"]
+
+i = 0
+while i <= len(greetings):
+    print(greetings[i])
+    i += 1
+
+print("-------------------------------")
+# 화씨 온도에서 섭씨 온도로 바꿔 주는 함수
+def fahrenheit_to_celsius(F):
+    C = ((F - 32)*5) / 9
+    return C
+
+temperature_list = [40, 15, 32, 64, -4, 11]
+print("화씨 온도 리스트: " + str(temperature_list))  # 화씨 온도 출력
+
+# 리스트의 값들을 화씨에서 섭씨로 변환하는 코드를 입력하세요.
+print("섭씨 온도 리스트: " + str(temperature_list))  # 섭씨 온도 출력
+
+
+
 
 
 
