@@ -36,7 +36,9 @@
 #
 #     i += 1
 #
+
 # print("-------------------------------")
+
 #
 # # 구구단 (중첩 while 문)
 # dan = 1
@@ -47,7 +49,10 @@
 #         hang += 1
 #     dan += 1
 #
+
 # print("-------------------------------")
+
+
 # # 04.14
 # # 리스트 원소를 모두 출력하기
 # greetings = ["안녕", "니하오", "곤니찌와", "올라", "싸와디캅", "헬로", "봉주르"]
@@ -57,7 +62,10 @@
 #     print(greetings[i])
 #     i += 1
 #
+
 # print("-------------------------------")
+
+
 # 화씨 온도에서 섭씨 온도로 바꿔 주는 함수
 def fahrenheit_to_celsius(F):
     return (F - 32)*5 / 9
@@ -73,7 +81,10 @@ while i < len(temperature_list):
 # 리스트의 값들을 화씨에서 섭씨로 변환하는 코드를 입력하세요.
 print("섭씨 온도 리스트: {} ".format(temperature_list))  # 섭씨 온도 출력
 
+
 print("-------------------------------")
+
+
 # 04.15
 # 원화(￦)에서 달러($)로 변환하는 함수
 def krw_to_usd(krw):
@@ -81,26 +92,54 @@ def krw_to_usd(krw):
 
 # 달러($)에서 엔화(￥)로 변환하는 함수
 def usd_to_jpy(usd):
-
-
-# 코드를 입력하세요.
-
+    return usd * 125
 
 # 원화(￦)으로 각각 얼마인가요?
 prices = [34000, 13000, 5000, 21000, 1000, 2000, 8000, 3000]
-print("한국 화폐: " + str(prices))
+print("한국 화폐: {} ".format(prices) )
 
 # amounts를 원화(￦)에서 달러($)로 변환하기
-# 코드를 입력하세요.
+i = 0
+while i < len(prices):
+    prices[i] = int(krw_to_usd(prices[i]))
+    i += 1
 
 # 달러($)로 각각 얼마인가요?
 print("미국 화폐: " + str(prices))
 
 # amounts를 달러($)에서 엔화(￥)으로 변환하기
-# 코드를 입력하세요.
+i = 0
+while i < len(prices):
+    prices[i] = round(usd_to_jpy(prices[i]), 1)
+    i += 1
 
 # 엔화(￥)으로 각각 얼마인가요?
 print("일본 화폐: " + str(prices))
+
+
+print("-------------------------------")
+
+
+# 빈 리스트 만들기
+numbers = []
+print(numbers)
+
+# numbers에 값들 추가
+numbers.append(1)
+print(numbers)
+
+# numbers에서 홀수 제거
+# 코드를 입력하세요
+print(numbers)
+
+# numbers의 인덱스 0 자리에 20이라는 값 삽입
+# 코드를 입력하세요
+print(numbers)
+
+# numbers를 정렬해서 출력
+# 코드를 입력하세요
+print(numbers)
+
 
 
 
