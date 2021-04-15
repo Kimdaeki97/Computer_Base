@@ -149,5 +149,16 @@ numbers.sort(reverse=True) #-> 아무것도 리턴하지 않고, 기존 리스�
 print(numbers)
 
 
+print("-------------------------------")
+
+# 04.15
+# 리스트에 값이 있는지 확인하기
+primes = [2, 3, 5, 7, 11, 13, 17, 19, 23]
+print(7 in primes)
+print(12 in primes)
+
+print(7 not in primes)
+print(12 not in primes)
+
 
 
