@@ -163,7 +163,10 @@ for i in range(len(numbers)):
 for i in range(11):
     print("{}^{} = {}".format(2, i, 2 ** i))
 
-
+# 구구단 출력, 반복문 사용
+for i in range(1,10):
+    for j in range(1,10):
+        print("{} * {} = {}".format(i, j, i*j))
 
 
 
