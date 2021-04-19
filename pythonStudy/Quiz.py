@@ -169,13 +169,17 @@ for i in range(1,10):
         print("{} * {} = {}".format(i, j, i*j))
 
 
+print("-------------------------------")
 
 
+# 04. 19
+#a + b + c = 1000을 만족하는 피타고라스 삼조 구하기
 
+for a in range(1, 1000):
+    for b in range(1, 1000):
+        c = 1000 - a - b
+        if a * a + b * b == c * c and a < b < c:
+            print(a * b * c)
 
-
-
-
-
-
+print("-------------------------------")
 
