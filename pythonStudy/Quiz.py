@@ -198,3 +198,21 @@ for left in range(len(numbers) // 2):
 
 print("뒤집어진 리스트: " + str(numbers))
 
+print("-------------------------------")
+
+# 04.21
+# 딕셔너리
+# 1. 단어장 만들기
+vocab = {
+    "sanitizer": "살균제",
+    "ambition": "야망",
+    "conscience": "양심",
+    "civilization": "문명"
+}
+print(vocab)
+
+# 2. 새로운 단어들 추가
+vocab["privilege"] = "특권"
+vocab["principle"] = "원칙"
+print(vocab)
+
