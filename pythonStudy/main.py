@@ -165,5 +165,7 @@ print(12 not in primes)
 my_dictionary = {5: 25, 2: 4, 3: 9, 9: 81}
 print(my_dictionary)
 
+for key,value in my_dictionary.items():
+    print(key, value)
 
 
