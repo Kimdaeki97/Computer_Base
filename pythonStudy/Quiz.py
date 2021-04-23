@@ -245,3 +245,24 @@ print("영-한 단어장\n{}\n".format(vocab))
 reversed_vocab = reverse_dict(vocab)
 print("한-영 단어장\n{}".format(reversed_vocab))
 
+print("-------------------------------")
+
+# 투표 결과 리스트
+votes = ['김영자', '강승기', '최만수', '김영자', '강승기', '강승기', '최만수', '김영자', \
+'최만수', '김영자', '최만수', '김영자', '김영자', '최만수', '최만수', '최만수', '강승기', \
+'강승기', '김영자', '김영자', '최만수', '김영자', '김영자', '강승기', '김영자']
+
+# 후보별 득표수 사전
+vote_counter = {}
+
+# 리스트 votes를 이용해서 사전 vote_counter를 정리하기
+for name in votes:
+    # 코드를 작성하세요.
+    if name not in vote_counter:
+        vote_counter[name] = 1
+    else:
+        vote_counter[name] += 1
+
+# 후보별 득표수 출력
+print(vote_counter)
+
