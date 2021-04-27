@@ -299,7 +299,7 @@ def sum_digit(num):
     return total
 
 # sum_digit(1)부터 sum_digit(1000)까지의 합 구하기
-# 코드를 입력하세요.
+
 
 
 
