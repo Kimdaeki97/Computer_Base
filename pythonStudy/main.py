@@ -169,3 +169,52 @@ for key,value in my_dictionary.items():
     print(key, value)
 
 
+print("-------------------------------")
+
+
+# 05.03
+import os
+print(os.getlogin())
+print(os.getcwd())
+
+import random
+print(random.random())
+print(random.uniform(0,2))
+
+'''
+[random 모듈]
+스탠다드 라이브러리에 있는 random 모듈은 랜덤한 숫자를 생성하기 위한 다양한 함수들을 제공한다.
+- randit 함수
+randit은 두 수 사이 어떤 랜덤한 정수를 리턴하는 함수이다.
+randit(a, b) 하면 a<= N <=b 사이 랜덤한 수를 리턴한다.
+
+- uniform 함수
+uniform 함수는 두 수 사이 랜덤한 소수를 리턴하는 함수이다.
+'''
+
+print("-------------------------------")
+
+import datetime
+pi_day = datetime.datetime(2021, 5, 3, 13, 6, 5)
+print(pi_day)
+print(type(pi_day))
+
+today = datetime.datetime.now()
+print(today)
+print(today.day)
+print(today.minute)
+
+# 포맷 코드
+print(today.strftime("%A, %B %dth %Y"))
+
+'''
+[datetime 모듈]
+날짜와 시간을 다루기 위한 다양한 클래스를 갖추고 있다.
+
+
+'''
+
+
+
+
+
