@@ -24,3 +24,8 @@ if guess == ANSWER:
     print("축하합니다 {}번 만에 숫자를 맞히셨습니다.".format(tries))
 else:
     print("아쉽습니다. 정답은 {}였습니다.".format(ANSWER))
+
+
+print("-------------------------------")
+
+# 05.05
