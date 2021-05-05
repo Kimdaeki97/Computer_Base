@@ -210,9 +210,13 @@ print(today.strftime("%A, %B %dth %Y"))
 '''
 [datetime 모듈]
 날짜와 시간을 다루기 위한 다양한 클래스를 갖추고 있다.
-
-
 '''
+
+# 05.05
+# strip
+# split
+full_name = "Kim, Yuna"
+print(full_name.split(", "))
 
 
 
