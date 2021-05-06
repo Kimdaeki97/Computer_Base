@@ -28,4 +28,9 @@ else:
 
 print("-------------------------------")
 
-# 05.05
+# 05.06
+
+for line in chicken.txt:
+    data = line.strip().split(": ")
+    revenue = int(data[1])
+    print(revenue)
