@@ -29,9 +29,17 @@ else:
 print("-------------------------------")
 
 # 05.06
+'''
+with open("data/chicken.txt", "r") as f:
+    total_revenue = 0
+    total_days = 0
 
-with open("data/chicken.txt", "r") as in_file:
-    for line in in_file:
+    for line in f:
         data = line.strip().split(": ")
         revenue = int(data[1])
-        print(revenue)
+        
+        total_revenue += revenue
+        total_days += 1
+        
+    print(total_revenue / total_days)
+'''
