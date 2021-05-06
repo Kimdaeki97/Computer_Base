@@ -30,7 +30,8 @@ print("-------------------------------")
 
 # 05.06
 
-for line in chicken.txt:
-    data = line.strip().split(": ")
-    revenue = int(data[1])
-    print(revenue)
+with open("data/chicken.txt", "r") as in_file:
+    for line in in_file:
+        data = line.strip().split(": ")
+        revenue = int(data[1])
+        print(revenue)

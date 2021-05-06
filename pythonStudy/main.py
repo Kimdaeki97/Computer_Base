@@ -213,9 +213,11 @@ print(today.strftime("%A, %B %dth %Y"))
 '''
 
 # 05.05
+full_name = "  Kim, Yuna"
 # strip
+# 맨 앞,뒤 공백들 제거
+print(full_name.split())
 # split
-full_name = "Kim, Yuna"
 print(full_name.split(", "))
 
 
