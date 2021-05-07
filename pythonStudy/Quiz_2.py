@@ -25,7 +25,6 @@ if guess == ANSWER:
 else:
     print("아쉽습니다. 정답은 {}였습니다.".format(ANSWER))
 
-
 print("-------------------------------")
 
 # 05.06

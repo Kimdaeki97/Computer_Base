@@ -220,6 +220,11 @@ print(full_name.split())
 # split
 print(full_name.split(", "))
 
+# 05.07
+with open("new_file", "a") as f:
+    f.write("Hello World\n")
+    f.write("My name is DAEKI\n")
+
 
 
 
