@@ -42,3 +42,4 @@ with open("data/chicken.txt", "r") as f:
         
     print(total_revenue / total_days)
 '''
+
