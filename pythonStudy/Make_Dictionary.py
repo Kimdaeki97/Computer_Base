@@ -11,3 +11,17 @@ with open("vocabulary.txt", "w") as f:
             break
 
         f.write("{}: {}\n".format(ENGLISH_WORD, KOREAN_WORD))
+
+# 05.10
+with open('vocabulary.txt', 'r') as f:
+    for line in f:
+        data = line.strip().split(": ")
+        english_word, koren_word = data[0], data[1]
+
+        # 유저 입력값 받기
+        guess = input("{}: ".format(koren_word))
+
+        if guess == english_word:
+            print("정답입니다!\n")
+        else:
+            print("아쉽습니다. 정답은 {}입니다".format(english_word))
