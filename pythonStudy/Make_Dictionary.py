@@ -6,17 +6,18 @@ with open("vocabulary.txt", "w") as f:
             break
 
         KOREAN_WORD = input("한국어 뜻을 입력하세요: ")
-        if KOREAN_WORD ==\
-                'q':
+        if KOREAN_WORD == 'q':
             break
 
         f.write("{}: {}\n".format(ENGLISH_WORD, KOREAN_WORD))
 
 # 05.10
+vocab = {}
 with open('vocabulary.txt', 'r') as f:
     for line in f:
         data = line.strip().split(": ")
         english_word, koren_word = data[0], data[1]
+        vocab[english_word] = koren_word
 
         # 유저 입력값 받기
         guess = input("{}: ".format(koren_word))
