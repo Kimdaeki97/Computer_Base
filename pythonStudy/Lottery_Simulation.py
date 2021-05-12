@@ -16,4 +16,13 @@ def draw_winning_numbers():
 
 print(draw_winning_numbers())
 
+def count_matching_numbers(numbers, winning_numbers):
+    count = 0
+
+    for num in numbers:
+        if num in winning_numbers:
+            count += 1
+
+    return count
+
 
