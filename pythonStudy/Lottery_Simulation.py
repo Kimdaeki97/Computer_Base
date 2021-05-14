@@ -10,9 +10,11 @@ def genetrate_number(n):
 
     return numbers
 
+
 def draw_winning_numbers():
     winning_numbers = genetrate_number(7)
     return sorted(winning_numbers[:6]) + winning_numbers[6:]
+
 
 def count_matching_numbers(numbers, winning_numbers):
     count = 0
