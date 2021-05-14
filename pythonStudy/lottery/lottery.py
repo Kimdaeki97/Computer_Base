@@ -1,6 +1,6 @@
 from random import randint
 
-def genetrate_number(n):
+def generate_numbers(n):
     numbers = []
 
     while len(numbers) < n:
@@ -12,7 +12,7 @@ def genetrate_number(n):
 
 
 def draw_winning_numbers():
-    winning_numbers = genetrate_number(7)
+    winning_numbers = generate_numbers(7)
     return sorted(winning_numbers[:6]) + winning_numbers[6:]
 
 
