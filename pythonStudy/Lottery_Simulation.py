@@ -14,8 +14,6 @@ def draw_winning_numbers():
     winning_numbers = genetrate_number(7)
     return sorted(winning_numbers[:6]) + winning_numbers[6:]
 
-print(draw_winning_numbers())
-
 def count_matching_numbers(numbers, winning_numbers):
     count = 0
 
@@ -25,5 +23,20 @@ def count_matching_numbers(numbers, winning_numbers):
 
     return count
 
-def check(numbers_test, winning_numbers):
+def check(numbers, winning_numbers):
+    count = count_matching_numbers(numbers, winning_numbers[:6])
+    bonus_count = count_matching_numbers(numbers, winning_numbers[6:])
+
+    if count == 6:
+        return 1000000000
+    elif count == 5 and bonus_count == 1:
+        return 50000000
+    elif count == 5:
+        return 1000000
+    elif count == 4:
+        return 50000
+    elif count == 3:
+        return 5000
+    else:
+        return 0
 
