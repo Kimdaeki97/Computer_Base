@@ -12,7 +12,7 @@ def generate_numbers():
     print("0과 9 사이의 서로 다른 숫자 3개를 랜덤한 순서로 뽑았습니다.\n")
     return numbers
 
-# SQL, 파이썬 심화
+# SQL, 파이썬 심화 중심으로
 # 6/30 연장
 
 
